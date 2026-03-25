@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nhậu không?</title>
+  <style>
+    body {
+      background: black;
+      color: #00ffcc;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 40px;
+      animation: glow 1s infinite alternate;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background: transparent;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #00ffcc;
+      color: black;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⚡ REQUEST ACCESS ⚡</h1>
+  <p>Cho xin 1 ngày rảnh...</p>
+  <p>Mục đích: NHẬU 🍻</p>
+
+  <button onclick="ask()">Chấp nhận</button>
+
+  <script>
+    function ask() {
+      document.body.innerHTML = `
+        <h1>🔥 KÈO ĐÃ CHỐT 🔥</h1>
+        <p>Chuẩn bị tinh thần... không say không về 😏🍻</p>
+      `;
+    }
+  </script>
+
+</body>
+</html>
